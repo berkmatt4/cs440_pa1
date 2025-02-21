@@ -15,21 +15,6 @@
             </deathLogList>
             <deathLogList>
                 <roundNumber>3</roundNumber>
-            </deathLogList>
-            <deathLogList>
-                <roundNumber>4</roundNumber>
-            </deathLogList>
-            <deathLogList>
-                <roundNumber>5</roundNumber>
-            </deathLogList>
-            <deathLogList>
-                <roundNumber>6</roundNumber>
-            </deathLogList>
-            <deathLogList>
-                <roundNumber>7</roundNumber>
-            </deathLogList>
-            <deathLogList>
-                <roundNumber>8</roundNumber>
                 <deathLog>
                     <deadUnitID>9</deadUnitID>
                     <controller>1</controller>
@@ -46,21 +31,6 @@
             </damageLogList>
             <damageLogList>
                 <roundNumber>3</roundNumber>
-            </damageLogList>
-            <damageLogList>
-                <roundNumber>4</roundNumber>
-            </damageLogList>
-            <damageLogList>
-                <roundNumber>5</roundNumber>
-            </damageLogList>
-            <damageLogList>
-                <roundNumber>6</roundNumber>
-            </damageLogList>
-            <damageLogList>
-                <roundNumber>7</roundNumber>
-            </damageLogList>
-            <damageLogList>
-                <roundNumber>8</roundNumber>
                 <damageLog>
                     <attackerID>2</attackerID>
                     <attackerController>0</attackerController>
@@ -69,72 +39,6 @@
                     <damage>214</damage>
                 </damageLog>
             </damageLogList>
-            <ResourceNodeExhaustionLogList>
-                <roundNumber>0</roundNumber>
-            </ResourceNodeExhaustionLogList>
-            <ResourceNodeExhaustionLogList>
-                <roundNumber>1</roundNumber>
-            </ResourceNodeExhaustionLogList>
-            <ResourceNodeExhaustionLogList>
-                <roundNumber>2</roundNumber>
-            </ResourceNodeExhaustionLogList>
-            <ResourceNodeExhaustionLogList>
-                <roundNumber>3</roundNumber>
-            </ResourceNodeExhaustionLogList>
-            <ResourceNodeExhaustionLogList>
-                <roundNumber>4</roundNumber>
-                <ResourceNodeExhaustionLog>
-                    <exhaustedNodeID>10</exhaustedNodeID>
-                    <exhaustedNodeType>TREE</exhaustedNodeType>
-                </ResourceNodeExhaustionLog>
-            </ResourceNodeExhaustionLogList>
-            <resourcePickupLogList>
-                <roundNumber>0</roundNumber>
-            </resourcePickupLogList>
-            <resourcePickupLogList>
-                <roundNumber>1</roundNumber>
-                <resourcePickupLog>
-                    <pickupAmount>100</pickupAmount>
-                    <gathererID>2</gathererID>
-                    <controller>0</controller>
-                    <nodeID>10</nodeID>
-                    <nodeType>TREE</nodeType>
-                    <resourceType>WOOD</resourceType>
-                </resourcePickupLog>
-            </resourcePickupLogList>
-            <resourcePickupLogList>
-                <roundNumber>2</roundNumber>
-                <resourcePickupLog>
-                    <pickupAmount>100</pickupAmount>
-                    <gathererID>2</gathererID>
-                    <controller>0</controller>
-                    <nodeID>10</nodeID>
-                    <nodeType>TREE</nodeType>
-                    <resourceType>WOOD</resourceType>
-                </resourcePickupLog>
-            </resourcePickupLogList>
-            <resourcePickupLogList>
-                <roundNumber>3</roundNumber>
-                <resourcePickupLog>
-                    <pickupAmount>100</pickupAmount>
-                    <gathererID>2</gathererID>
-                    <controller>0</controller>
-                    <nodeID>10</nodeID>
-                    <nodeType>TREE</nodeType>
-                    <resourceType>WOOD</resourceType>
-                </resourcePickupLog>
-            </resourcePickupLogList>
-            <resourcePickupLogList>
-                <roundNumber>4</roundNumber>
-                <resourcePickupLog>
-                    <pickupAmount>100</pickupAmount>
-                    <gathererID>2</gathererID>
-                    <controller>0</controller>
-                    <nodeID>10</nodeID>
-                    <nodeType>TREE</nodeType>
-                    <resourceType>WOOD</resourceType>
-                </resourcePickupLog>
-            </resourcePickupLogList>
         </eventLogger>
         <commandsIssued>
             <actionList>
@@ -144,7 +48,7 @@
                     <action xsi:type="TargetedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                         <unitId>2</unitId>
                         <actionType>COMPOUNDGATHER</actionType>
-                        <targetId>10</targetId>
+                        <targetId>19</targetId>
                     </action>
                 </actionEntry>
             </actionList>
@@ -153,56 +57,9 @@
             </actionList>
             <actionList>
                 <roundNumber>2</roundNumber>
-                <actionEntry>
-                    <unitID>2</unitID>
-                    <action xsi:type="TargetedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                        <unitId>2</unitId>
-                        <actionType>COMPOUNDGATHER</actionType>
-                        <targetId>10</targetId>
-                    </action>
-                </actionEntry>
             </actionList>
             <actionList>
                 <roundNumber>3</roundNumber>
-                <actionEntry>
-                    <unitID>2</unitID>
-                    <action xsi:type="TargetedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                        <unitId>2</unitId>
-                        <actionType>COMPOUNDGATHER</actionType>
-                        <targetId>10</targetId>
-                    </action>
-                </actionEntry>
-            </actionList>
-            <actionList>
-                <roundNumber>4</roundNumber>
-                <actionEntry>
-                    <unitID>2</unitID>
-                    <action xsi:type="TargetedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                        <unitId>2</unitId>
-                        <actionType>COMPOUNDGATHER</actionType>
-                        <targetId>10</targetId>
-                    </action>
-                </actionEntry>
-            </actionList>
-            <actionList>
-                <roundNumber>5</roundNumber>
-                <actionEntry>
-                    <unitID>2</unitID>
-                    <action xsi:type="TargetedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                        <unitId>2</unitId>
-                        <actionType>COMPOUNDGATHER</actionType>
-                        <targetId>20</targetId>
-                    </action>
-                </actionEntry>
-            </actionList>
-            <actionList>
-                <roundNumber>6</roundNumber>
-            </actionList>
-            <actionList>
-                <roundNumber>7</roundNumber>
-            </actionList>
-            <actionList>
-                <roundNumber>8</roundNumber>
                 <actionEntry>
                     <unitID>2</unitID>
                     <action xsi:type="TargetedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -222,7 +79,7 @@
                         <action xsi:type="TargetedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                             <unitId>2</unitId>
                             <actionType>COMPOUNDGATHER</actionType>
-                            <targetId>10</targetId>
+                            <targetId>19</targetId>
                         </action>
                         <feedback>INCOMPLETE</feedback>
                     </actionResult>
@@ -236,9 +93,9 @@
                         <action xsi:type="TargetedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                             <unitId>2</unitId>
                             <actionType>COMPOUNDGATHER</actionType>
-                            <targetId>10</targetId>
+                            <targetId>19</targetId>
                         </action>
-                        <feedback>COMPLETED</feedback>
+                        <feedback>INCOMPLETE</feedback>
                     </actionResult>
                 </actionResultEntry>
             </actionResultList>
@@ -250,84 +107,14 @@
                         <action xsi:type="TargetedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                             <unitId>2</unitId>
                             <actionType>COMPOUNDGATHER</actionType>
-                            <targetId>10</targetId>
+                            <targetId>19</targetId>
                         </action>
-                        <feedback>COMPLETED</feedback>
+                        <feedback>INCOMPLETE</feedback>
                     </actionResult>
                 </actionResultEntry>
             </actionResultList>
             <actionResultList>
                 <roundNumber>3</roundNumber>
-                <actionResultEntry>
-                    <unitID>2</unitID>
-                    <actionResult>
-                        <action xsi:type="TargetedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                            <unitId>2</unitId>
-                            <actionType>COMPOUNDGATHER</actionType>
-                            <targetId>10</targetId>
-                        </action>
-                        <feedback>COMPLETED</feedback>
-                    </actionResult>
-                </actionResultEntry>
-            </actionResultList>
-            <actionResultList>
-                <roundNumber>4</roundNumber>
-                <actionResultEntry>
-                    <unitID>2</unitID>
-                    <actionResult>
-                        <action xsi:type="TargetedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                            <unitId>2</unitId>
-                            <actionType>COMPOUNDGATHER</actionType>
-                            <targetId>10</targetId>
-                        </action>
-                        <feedback>COMPLETED</feedback>
-                    </actionResult>
-                </actionResultEntry>
-            </actionResultList>
-            <actionResultList>
-                <roundNumber>5</roundNumber>
-                <actionResultEntry>
-                    <unitID>2</unitID>
-                    <actionResult>
-                        <action xsi:type="TargetedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                            <unitId>2</unitId>
-                            <actionType>COMPOUNDGATHER</actionType>
-                            <targetId>20</targetId>
-                        </action>
-                        <feedback>INCOMPLETE</feedback>
-                    </actionResult>
-                </actionResultEntry>
-            </actionResultList>
-            <actionResultList>
-                <roundNumber>6</roundNumber>
-                <actionResultEntry>
-                    <unitID>2</unitID>
-                    <actionResult>
-                        <action xsi:type="TargetedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                            <unitId>2</unitId>
-                            <actionType>COMPOUNDGATHER</actionType>
-                            <targetId>20</targetId>
-                        </action>
-                        <feedback>INCOMPLETE</feedback>
-                    </actionResult>
-                </actionResultEntry>
-            </actionResultList>
-            <actionResultList>
-                <roundNumber>7</roundNumber>
-                <actionResultEntry>
-                    <unitID>2</unitID>
-                    <actionResult>
-                        <action xsi:type="TargetedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                            <unitId>2</unitId>
-                            <actionType>COMPOUNDGATHER</actionType>
-                            <targetId>20</targetId>
-                        </action>
-                        <feedback>INCOMPLETE</feedback>
-                    </actionResult>
-                </actionResultEntry>
-            </actionResultList>
-            <actionResultList>
-                <roundNumber>8</roundNumber>
                 <actionResultEntry>
                     <unitID>2</unitID>
                     <actionResult>
@@ -350,7 +137,7 @@
                         <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                             <unitId>2</unitId>
                             <actionType>PRIMITIVEMOVE</actionType>
-                            <direction>EAST</direction>
+                            <direction>SOUTHEAST</direction>
                         </action>
                         <feedback>COMPLETED</feedback>
                     </actionResult>
@@ -363,8 +150,8 @@
                     <actionResult>
                         <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                             <unitId>2</unitId>
-                            <actionType>PRIMITIVEGATHER</actionType>
-                            <direction>EAST</direction>
+                            <actionType>PRIMITIVEMOVE</actionType>
+                            <direction>SOUTHEAST</direction>
                         </action>
                         <feedback>COMPLETED</feedback>
                     </actionResult>
@@ -377,8 +164,8 @@
                     <actionResult>
                         <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                             <unitId>2</unitId>
-                            <actionType>PRIMITIVEGATHER</actionType>
-                            <direction>EAST</direction>
+                            <actionType>PRIMITIVEMOVE</actionType>
+                            <direction>SOUTHEAST</direction>
                         </action>
                         <feedback>COMPLETED</feedback>
                     </actionResult>
@@ -386,76 +173,6 @@
             </actionResultList>
             <actionResultList>
                 <roundNumber>3</roundNumber>
-                <actionResultEntry>
-                    <unitID>2</unitID>
-                    <actionResult>
-                        <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                            <unitId>2</unitId>
-                            <actionType>PRIMITIVEGATHER</actionType>
-                            <direction>EAST</direction>
-                        </action>
-                        <feedback>COMPLETED</feedback>
-                    </actionResult>
-                </actionResultEntry>
-            </actionResultList>
-            <actionResultList>
-                <roundNumber>4</roundNumber>
-                <actionResultEntry>
-                    <unitID>2</unitID>
-                    <actionResult>
-                        <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                            <unitId>2</unitId>
-                            <actionType>PRIMITIVEGATHER</actionType>
-                            <direction>EAST</direction>
-                        </action>
-                        <feedback>COMPLETED</feedback>
-                    </actionResult>
-                </actionResultEntry>
-            </actionResultList>
-            <actionResultList>
-                <roundNumber>5</roundNumber>
-                <actionResultEntry>
-                    <unitID>2</unitID>
-                    <actionResult>
-                        <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                            <unitId>2</unitId>
-                            <actionType>PRIMITIVEMOVE</actionType>
-                            <direction>SOUTH</direction>
-                        </action>
-                        <feedback>COMPLETED</feedback>
-                    </actionResult>
-                </actionResultEntry>
-            </actionResultList>
-            <actionResultList>
-                <roundNumber>6</roundNumber>
-                <actionResultEntry>
-                    <unitID>2</unitID>
-                    <actionResult>
-                        <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                            <unitId>2</unitId>
-                            <actionType>PRIMITIVEMOVE</actionType>
-                            <direction>SOUTHEAST</direction>
-                        </action>
-                        <feedback>COMPLETED</feedback>
-                    </actionResult>
-                </actionResultEntry>
-            </actionResultList>
-            <actionResultList>
-                <roundNumber>7</roundNumber>
-                <actionResultEntry>
-                    <unitID>2</unitID>
-                    <actionResult>
-                        <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                            <unitId>2</unitId>
-                            <actionType>PRIMITIVEMOVE</actionType>
-                            <direction>SOUTHEAST</direction>
-                        </action>
-                        <feedback>COMPLETED</feedback>
-                    </actionResult>
-                </actionResultEntry>
-            </actionResultList>
-            <actionResultList>
-                <roundNumber>8</roundNumber>
                 <actionResultEntry>
                     <unitID>2</unitID>
                     <actionResult>
@@ -484,21 +201,6 @@
             </deathLogList>
             <deathLogList>
                 <roundNumber>3</roundNumber>
-            </deathLogList>
-            <deathLogList>
-                <roundNumber>4</roundNumber>
-            </deathLogList>
-            <deathLogList>
-                <roundNumber>5</roundNumber>
-            </deathLogList>
-            <deathLogList>
-                <roundNumber>6</roundNumber>
-            </deathLogList>
-            <deathLogList>
-                <roundNumber>7</roundNumber>
-            </deathLogList>
-            <deathLogList>
-                <roundNumber>8</roundNumber>
                 <deathLog>
                     <deadUnitID>9</deadUnitID>
                     <controller>1</controller>
@@ -515,21 +217,6 @@
             </damageLogList>
             <damageLogList>
                 <roundNumber>3</roundNumber>
-            </damageLogList>
-            <damageLogList>
-                <roundNumber>4</roundNumber>
-            </damageLogList>
-            <damageLogList>
-                <roundNumber>5</roundNumber>
-            </damageLogList>
-            <damageLogList>
-                <roundNumber>6</roundNumber>
-            </damageLogList>
-            <damageLogList>
-                <roundNumber>7</roundNumber>
-            </damageLogList>
-            <damageLogList>
-                <roundNumber>8</roundNumber>
                 <damageLog>
                     <attackerID>2</attackerID>
                     <attackerController>0</attackerController>
@@ -538,72 +225,6 @@
                     <damage>214</damage>
                 </damageLog>
             </damageLogList>
-            <ResourceNodeExhaustionLogList>
-                <roundNumber>0</roundNumber>
-            </ResourceNodeExhaustionLogList>
-            <ResourceNodeExhaustionLogList>
-                <roundNumber>1</roundNumber>
-            </ResourceNodeExhaustionLogList>
-            <ResourceNodeExhaustionLogList>
-                <roundNumber>2</roundNumber>
-            </ResourceNodeExhaustionLogList>
-            <ResourceNodeExhaustionLogList>
-                <roundNumber>3</roundNumber>
-            </ResourceNodeExhaustionLogList>
-            <ResourceNodeExhaustionLogList>
-                <roundNumber>4</roundNumber>
-                <ResourceNodeExhaustionLog>
-                    <exhaustedNodeID>10</exhaustedNodeID>
-                    <exhaustedNodeType>TREE</exhaustedNodeType>
-                </ResourceNodeExhaustionLog>
-            </ResourceNodeExhaustionLogList>
-            <resourcePickupLogList>
-                <roundNumber>0</roundNumber>
-            </resourcePickupLogList>
-            <resourcePickupLogList>
-                <roundNumber>1</roundNumber>
-                <resourcePickupLog>
-                    <pickupAmount>100</pickupAmount>
-                    <gathererID>2</gathererID>
-                    <controller>0</controller>
-                    <nodeID>10</nodeID>
-                    <nodeType>TREE</nodeType>
-                    <resourceType>WOOD</resourceType>
-                </resourcePickupLog>
-            </resourcePickupLogList>
-            <resourcePickupLogList>
-                <roundNumber>2</roundNumber>
-                <resourcePickupLog>
-                    <pickupAmount>100</pickupAmount>
-                    <gathererID>2</gathererID>
-                    <controller>0</controller>
-                    <nodeID>10</nodeID>
-                    <nodeType>TREE</nodeType>
-                    <resourceType>WOOD</resourceType>
-                </resourcePickupLog>
-            </resourcePickupLogList>
-            <resourcePickupLogList>
-                <roundNumber>3</roundNumber>
-                <resourcePickupLog>
-                    <pickupAmount>100</pickupAmount>
-                    <gathererID>2</gathererID>
-                    <controller>0</controller>
-                    <nodeID>10</nodeID>
-                    <nodeType>TREE</nodeType>
-                    <resourceType>WOOD</resourceType>
-                </resourcePickupLog>
-            </resourcePickupLogList>
-            <resourcePickupLogList>
-                <roundNumber>4</roundNumber>
-                <resourcePickupLog>
-                    <pickupAmount>100</pickupAmount>
-                    <gathererID>2</gathererID>
-                    <controller>0</controller>
-                    <nodeID>10</nodeID>
-                    <nodeType>TREE</nodeType>
-                    <resourceType>WOOD</resourceType>
-                </resourcePickupLog>
-            </resourcePickupLogList>
         </eventLogger>
         <commandsIssued/>
         <commandFeedback/>
@@ -623,21 +244,6 @@
             </deathLogList>
             <deathLogList>
                 <roundNumber>3</roundNumber>
-            </deathLogList>
-            <deathLogList>
-                <roundNumber>4</roundNumber>
-            </deathLogList>
-            <deathLogList>
-                <roundNumber>5</roundNumber>
-            </deathLogList>
-            <deathLogList>
-                <roundNumber>6</roundNumber>
-            </deathLogList>
-            <deathLogList>
-                <roundNumber>7</roundNumber>
-            </deathLogList>
-            <deathLogList>
-                <roundNumber>8</roundNumber>
                 <deathLog>
                     <deadUnitID>9</deadUnitID>
                     <controller>1</controller>
@@ -654,21 +260,6 @@
             </damageLogList>
             <damageLogList>
                 <roundNumber>3</roundNumber>
-            </damageLogList>
-            <damageLogList>
-                <roundNumber>4</roundNumber>
-            </damageLogList>
-            <damageLogList>
-                <roundNumber>5</roundNumber>
-            </damageLogList>
-            <damageLogList>
-                <roundNumber>6</roundNumber>
-            </damageLogList>
-            <damageLogList>
-                <roundNumber>7</roundNumber>
-            </damageLogList>
-            <damageLogList>
-                <roundNumber>8</roundNumber>
                 <damageLog>
                     <attackerID>2</attackerID>
                     <attackerController>0</attackerController>
@@ -677,72 +268,6 @@
                     <damage>214</damage>
                 </damageLog>
             </damageLogList>
-            <ResourceNodeExhaustionLogList>
-                <roundNumber>0</roundNumber>
-            </ResourceNodeExhaustionLogList>
-            <ResourceNodeExhaustionLogList>
-                <roundNumber>1</roundNumber>
-            </ResourceNodeExhaustionLogList>
-            <ResourceNodeExhaustionLogList>
-                <roundNumber>2</roundNumber>
-            </ResourceNodeExhaustionLogList>
-            <ResourceNodeExhaustionLogList>
-                <roundNumber>3</roundNumber>
-            </ResourceNodeExhaustionLogList>
-            <ResourceNodeExhaustionLogList>
-                <roundNumber>4</roundNumber>
-                <ResourceNodeExhaustionLog>
-                    <exhaustedNodeID>10</exhaustedNodeID>
-                    <exhaustedNodeType>TREE</exhaustedNodeType>
-                </ResourceNodeExhaustionLog>
-            </ResourceNodeExhaustionLogList>
-            <resourcePickupLogList>
-                <roundNumber>0</roundNumber>
-            </resourcePickupLogList>
-            <resourcePickupLogList>
-                <roundNumber>1</roundNumber>
-                <resourcePickupLog>
-                    <pickupAmount>100</pickupAmount>
-                    <gathererID>2</gathererID>
-                    <controller>0</controller>
-                    <nodeID>10</nodeID>
-                    <nodeType>TREE</nodeType>
-                    <resourceType>WOOD</resourceType>
-                </resourcePickupLog>
-            </resourcePickupLogList>
-            <resourcePickupLogList>
-                <roundNumber>2</roundNumber>
-                <resourcePickupLog>
-                    <pickupAmount>100</pickupAmount>
-                    <gathererID>2</gathererID>
-                    <controller>0</controller>
-                    <nodeID>10</nodeID>
-                    <nodeType>TREE</nodeType>
-                    <resourceType>WOOD</resourceType>
-                </resourcePickupLog>
-            </resourcePickupLogList>
-            <resourcePickupLogList>
-                <roundNumber>3</roundNumber>
-                <resourcePickupLog>
-                    <pickupAmount>100</pickupAmount>
-                    <gathererID>2</gathererID>
-                    <controller>0</controller>
-                    <nodeID>10</nodeID>
-                    <nodeType>TREE</nodeType>
-                    <resourceType>WOOD</resourceType>
-                </resourcePickupLog>
-            </resourcePickupLogList>
-            <resourcePickupLogList>
-                <roundNumber>4</roundNumber>
-                <resourcePickupLog>
-                    <pickupAmount>100</pickupAmount>
-                    <gathererID>2</gathererID>
-                    <controller>0</controller>
-                    <nodeID>10</nodeID>
-                    <nodeType>TREE</nodeType>
-                    <resourceType>WOOD</resourceType>
-                </resourcePickupLog>
-            </resourcePickupLogList>
         </eventLogger>
         <commandsIssued>
             <actionList>
@@ -752,7 +277,7 @@
                     <action xsi:type="TargetedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                         <unitId>2</unitId>
                         <actionType>COMPOUNDGATHER</actionType>
-                        <targetId>10</targetId>
+                        <targetId>19</targetId>
                     </action>
                 </actionEntry>
             </actionList>
@@ -761,56 +286,9 @@
             </actionList>
             <actionList>
                 <roundNumber>2</roundNumber>
-                <actionEntry>
-                    <unitID>2</unitID>
-                    <action xsi:type="TargetedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                        <unitId>2</unitId>
-                        <actionType>COMPOUNDGATHER</actionType>
-                        <targetId>10</targetId>
-                    </action>
-                </actionEntry>
             </actionList>
             <actionList>
                 <roundNumber>3</roundNumber>
-                <actionEntry>
-                    <unitID>2</unitID>
-                    <action xsi:type="TargetedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                        <unitId>2</unitId>
-                        <actionType>COMPOUNDGATHER</actionType>
-                        <targetId>10</targetId>
-                    </action>
-                </actionEntry>
-            </actionList>
-            <actionList>
-                <roundNumber>4</roundNumber>
-                <actionEntry>
-                    <unitID>2</unitID>
-                    <action xsi:type="TargetedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                        <unitId>2</unitId>
-                        <actionType>COMPOUNDGATHER</actionType>
-                        <targetId>10</targetId>
-                    </action>
-                </actionEntry>
-            </actionList>
-            <actionList>
-                <roundNumber>5</roundNumber>
-                <actionEntry>
-                    <unitID>2</unitID>
-                    <action xsi:type="TargetedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                        <unitId>2</unitId>
-                        <actionType>COMPOUNDGATHER</actionType>
-                        <targetId>20</targetId>
-                    </action>
-                </actionEntry>
-            </actionList>
-            <actionList>
-                <roundNumber>6</roundNumber>
-            </actionList>
-            <actionList>
-                <roundNumber>7</roundNumber>
-            </actionList>
-            <actionList>
-                <roundNumber>8</roundNumber>
                 <actionEntry>
                     <unitID>2</unitID>
                     <action xsi:type="TargetedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -830,7 +308,7 @@
                         <action xsi:type="TargetedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                             <unitId>2</unitId>
                             <actionType>COMPOUNDGATHER</actionType>
-                            <targetId>10</targetId>
+                            <targetId>19</targetId>
                         </action>
                         <feedback>INCOMPLETE</feedback>
                     </actionResult>
@@ -844,9 +322,9 @@
                         <action xsi:type="TargetedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                             <unitId>2</unitId>
                             <actionType>COMPOUNDGATHER</actionType>
-                            <targetId>10</targetId>
+                            <targetId>19</targetId>
                         </action>
-                        <feedback>COMPLETED</feedback>
+                        <feedback>INCOMPLETE</feedback>
                     </actionResult>
                 </actionResultEntry>
             </actionResultList>
@@ -858,84 +336,14 @@
                         <action xsi:type="TargetedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                             <unitId>2</unitId>
                             <actionType>COMPOUNDGATHER</actionType>
-                            <targetId>10</targetId>
+                            <targetId>19</targetId>
                         </action>
-                        <feedback>COMPLETED</feedback>
+                        <feedback>INCOMPLETE</feedback>
                     </actionResult>
                 </actionResultEntry>
             </actionResultList>
             <actionResultList>
                 <roundNumber>3</roundNumber>
-                <actionResultEntry>
-                    <unitID>2</unitID>
-                    <actionResult>
-                        <action xsi:type="TargetedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                            <unitId>2</unitId>
-                            <actionType>COMPOUNDGATHER</actionType>
-                            <targetId>10</targetId>
-                        </action>
-                        <feedback>COMPLETED</feedback>
-                    </actionResult>
-                </actionResultEntry>
-            </actionResultList>
-            <actionResultList>
-                <roundNumber>4</roundNumber>
-                <actionResultEntry>
-                    <unitID>2</unitID>
-                    <actionResult>
-                        <action xsi:type="TargetedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                            <unitId>2</unitId>
-                            <actionType>COMPOUNDGATHER</actionType>
-                            <targetId>10</targetId>
-                        </action>
-                        <feedback>COMPLETED</feedback>
-                    </actionResult>
-                </actionResultEntry>
-            </actionResultList>
-            <actionResultList>
-                <roundNumber>5</roundNumber>
-                <actionResultEntry>
-                    <unitID>2</unitID>
-                    <actionResult>
-                        <action xsi:type="TargetedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                            <unitId>2</unitId>
-                            <actionType>COMPOUNDGATHER</actionType>
-                            <targetId>20</targetId>
-                        </action>
-                        <feedback>INCOMPLETE</feedback>
-                    </actionResult>
-                </actionResultEntry>
-            </actionResultList>
-            <actionResultList>
-                <roundNumber>6</roundNumber>
-                <actionResultEntry>
-                    <unitID>2</unitID>
-                    <actionResult>
-                        <action xsi:type="TargetedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                            <unitId>2</unitId>
-                            <actionType>COMPOUNDGATHER</actionType>
-                            <targetId>20</targetId>
-                        </action>
-                        <feedback>INCOMPLETE</feedback>
-                    </actionResult>
-                </actionResultEntry>
-            </actionResultList>
-            <actionResultList>
-                <roundNumber>7</roundNumber>
-                <actionResultEntry>
-                    <unitID>2</unitID>
-                    <actionResult>
-                        <action xsi:type="TargetedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                            <unitId>2</unitId>
-                            <actionType>COMPOUNDGATHER</actionType>
-                            <targetId>20</targetId>
-                        </action>
-                        <feedback>INCOMPLETE</feedback>
-                    </actionResult>
-                </actionResultEntry>
-            </actionResultList>
-            <actionResultList>
-                <roundNumber>8</roundNumber>
                 <actionResultEntry>
                     <unitID>2</unitID>
                     <actionResult>
@@ -958,7 +366,7 @@
                         <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                             <unitId>2</unitId>
                             <actionType>PRIMITIVEMOVE</actionType>
-                            <direction>EAST</direction>
+                            <direction>SOUTHEAST</direction>
                         </action>
                         <feedback>COMPLETED</feedback>
                     </actionResult>
@@ -971,8 +379,8 @@
                     <actionResult>
                         <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                             <unitId>2</unitId>
-                            <actionType>PRIMITIVEGATHER</actionType>
-                            <direction>EAST</direction>
+                            <actionType>PRIMITIVEMOVE</actionType>
+                            <direction>SOUTHEAST</direction>
                         </action>
                         <feedback>COMPLETED</feedback>
                     </actionResult>
@@ -985,8 +393,8 @@
                     <actionResult>
                         <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                             <unitId>2</unitId>
-                            <actionType>PRIMITIVEGATHER</actionType>
-                            <direction>EAST</direction>
+                            <actionType>PRIMITIVEMOVE</actionType>
+                            <direction>SOUTHEAST</direction>
                         </action>
                         <feedback>COMPLETED</feedback>
                     </actionResult>
@@ -994,76 +402,6 @@
             </actionResultList>
             <actionResultList>
                 <roundNumber>3</roundNumber>
-                <actionResultEntry>
-                    <unitID>2</unitID>
-                    <actionResult>
-                        <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                            <unitId>2</unitId>
-                            <actionType>PRIMITIVEGATHER</actionType>
-                            <direction>EAST</direction>
-                        </action>
-                        <feedback>COMPLETED</feedback>
-                    </actionResult>
-                </actionResultEntry>
-            </actionResultList>
-            <actionResultList>
-                <roundNumber>4</roundNumber>
-                <actionResultEntry>
-                    <unitID>2</unitID>
-                    <actionResult>
-                        <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                            <unitId>2</unitId>
-                            <actionType>PRIMITIVEGATHER</actionType>
-                            <direction>EAST</direction>
-                        </action>
-                        <feedback>COMPLETED</feedback>
-                    </actionResult>
-                </actionResultEntry>
-            </actionResultList>
-            <actionResultList>
-                <roundNumber>5</roundNumber>
-                <actionResultEntry>
-                    <unitID>2</unitID>
-                    <actionResult>
-                        <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                            <unitId>2</unitId>
-                            <actionType>PRIMITIVEMOVE</actionType>
-                            <direction>SOUTH</direction>
-                        </action>
-                        <feedback>COMPLETED</feedback>
-                    </actionResult>
-                </actionResultEntry>
-            </actionResultList>
-            <actionResultList>
-                <roundNumber>6</roundNumber>
-                <actionResultEntry>
-                    <unitID>2</unitID>
-                    <actionResult>
-                        <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                            <unitId>2</unitId>
-                            <actionType>PRIMITIVEMOVE</actionType>
-                            <direction>SOUTHEAST</direction>
-                        </action>
-                        <feedback>COMPLETED</feedback>
-                    </actionResult>
-                </actionResultEntry>
-            </actionResultList>
-            <actionResultList>
-                <roundNumber>7</roundNumber>
-                <actionResultEntry>
-                    <unitID>2</unitID>
-                    <actionResult>
-                        <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                            <unitId>2</unitId>
-                            <actionType>PRIMITIVEMOVE</actionType>
-                            <direction>SOUTHEAST</direction>
-                        </action>
-                        <feedback>COMPLETED</feedback>
-                    </actionResult>
-                </actionResultEntry>
-            </actionResultList>
-            <actionResultList>
-                <roundNumber>8</roundNumber>
                 <actionResultEntry>
                     <unitID>2</unitID>
                     <actionResult>
