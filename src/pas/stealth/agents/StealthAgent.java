@@ -11,9 +11,11 @@ import edu.cwru.sepia.util.Direction;
 
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.HashSet;
@@ -43,7 +45,9 @@ public class StealthAgent
     private Vertex townHallVertex;
     private Path currentPath;
     private boolean infilDone = false;
-    private Map<Integer, Vertex> enemyPos = new HashMap<>();
+    private ArrayList<Vertex> enemyPos = new ArrayList<Vertex>();
+    private ArrayList<Integer> enemyIDs = new ArrayList<Integer>();
+    private int myUnitID;
 
 
 
@@ -82,14 +86,20 @@ public class StealthAgent
         // let's calculate how far away enemy units can see us...this will be the same for all units (except the base)
         // which doesn't have a sight limit (nor does it care about seeing you)
         // iterate over the "other" (i.e. not the base) enemy units until we get a UnitView that is not null
-        Set<Integer> myUnitID = new HashSet<Integer>();
+        List<Integer> myUnitIDSet = new ArrayList<Integer>();
         for(Integer unitID : state.getUnitIds(this.getPlayerNumber())){
-            myUnitID.add(unitID);
+            myUnitIDSet.add(unitID);
         }
 
-        if(myUnitID.size() > 1){
-            
+        if(myUnitIDSet.size() > 1){
+            System.err.println("[ERROR] StealthAgent.initialStep: too many frienly units counted");
+            System.exit(-1);
         }
+        int myUnitID = myUnitIDSet.get(0);
+        this.myUnitID = myUnitID;
+        UnitView footman = state.getUnit(myUnitID);
+        this.startVertex = new Vertex(footman.getXPosition(), footman.getYPosition());
+
 
         UnitView otherEnemyUnitView = null;
         Iterator<Integer> otherEnemyUnitIDsIt = this.getOtherEnemyUnitIDs().iterator();
@@ -98,6 +108,31 @@ public class StealthAgent
             otherEnemyUnitView = state.getUnit(otherEnemyUnitIDsIt.next());
         }
 
+        
+
+
+        int enemyBaseID = this.getEnemyBaseUnitID();
+        UnitView enemyBase = state.getUnit(enemyBaseID);
+
+        this.townHallVertex = new Vertex(enemyBase.getXPosition(), enemyBase.getYPosition());
+
+        System.out.println("Enemy townhall at "+ this.townHallVertex.getXCoordinate() +", "+this.townHallVertex.getYCoordinate());
+
+        Set<Integer> enemyUnitIds = new HashSet<Integer>();
+        for(Integer unitID : state.getUnitIds(0)){
+            if(unitID != enemyBaseID){
+                System.out.println("Found enemy!");
+                enemyUnitIds.add(unitID);
+                this.enemyIDs.add(unitID);
+                UnitView enemyUnit = state.getUnit(unitID);
+                Vertex enemyVert = new Vertex(enemyUnit.getXPosition(), enemyUnit.getYPosition());
+                this.enemyPos.add(enemyVert);
+                System.out.println("Enemy at: "+enemyUnit.getXPosition()+", "+enemyUnit.getYPosition());
+            }
+        }
+
+
+        this.currentPhase = AgentPhase.INFILTRATE;
 
         if(otherEnemyUnitView == null)
         {
