@@ -176,6 +176,41 @@ public class StealthAgent
             so that you implement escaping
          */
 
+         public float computeEdgeWeight(Vertex start, Vertex end, Stateview gameState, ExtraParams params) {
+    
+            int targetX = end.getXCoordinate();
+            int targetY = end.getYCoordinate();
+        
+            int destinationX = this.getDestination().getXCoordinate();
+            int destinationY = this.getDestination().getYCoordinate();
+        
+            float riskFactor = 0;
+            int enemyVisionRange = this.getEnemyChebyshevSightLimit();
+        
+            for (Integer enemyId : this.getOtherEnemyUnitIDs()) {
+                UnitView enemyUnit = gameState.getUnit(enemyId);
+                if (enemyUnit == null) {
+                    continue;
+                }
+        
+                int enemyPosX = enemyUnit.getXPosition();
+                int enemyPosY = enemyUnit.getYPosition();
+                float proximityToEnemy = (float) Math.max(Math.abs(enemyPosX - targetX), Math.abs(enemyPosY - targetY));
+        
+                if (proximityToEnemy <= enemyVisionRange + 1) {
+                    logger.finest("Node " + end + " is within enemy detection range.");
+                    return Float.POSITIVE_INFINITY;
+                } else {
+                    riskFactor += enemyVisionRange / (proximityToEnemy - enemyVisionRange - 1);
+                }
+            }
+        
+            float heuristicToGoal = (float) Math.max(Math.abs(destinationX - targetX), Math.abs(destinationY - targetY));
+            logger.finest("Path from " + start + " to " + end + " has a computed weight of " + (heuristicToGoal + riskFactor));
+        
+            return heuristicToGoal + riskFactor;
+        }
+
         return actions;
     }
 
